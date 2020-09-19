@@ -1,0 +1,17 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" stroke="null" style="vector-effect: non-scaling-stroke;">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs stroke="null" style="vector-effect: non-scaling-stroke;">
+  <linearGradient stroke="null" style="vector-effect: non-scaling-stroke;" spreadMethod="pad" y2="0.46875" x2="1" y1="0.48438" x1="0" id="svg_10">
+   <stop stroke="null" style="vector-effect: non-scaling-stroke;" offset="0.07422" stop-color="#007f7f"/>
+   <stop stroke="null" style="vector-effect: non-scaling-stroke;" offset="0.875" stop-color="#ff8080"/>
+  </linearGradient>
+ </defs>
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" x="-1" y="-1" width="801.9996" height="601.9997" id="canvas_background" fill="none"/>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <path stroke="#000" id="svg_9" d="m3.99844,10.99687l594.74974,0l198.2503,261.99746l-198.2503,261.99868l-594.74974,0l198.25017,-261.99868l-198.25017,-261.99746z" stroke-opacity="null" stroke-width="1.5" fill="url(#svg_10)"/>
+ </g>
+</svg>
