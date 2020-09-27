@@ -1,0 +1,31 @@
+  h1
+  {
+    background-color: darkgray;
+    color: darkslateblue;
+  }
+  h2
+  {
+    background-color: darkslateblue;
+    color: silver;
+  }
+  body
+  {
+    alink: "#32cd32";
+    background-color: aliceblue;
+    font-family: Times New Roman, sans-serif;
+  }
+  a
+  {
+    transition: 1s linear; /* Время изменения */
+    color: darkslateblue;
+  }
+  a:hover
+  {
+    color:silver;
+    background: darkslateblue;
+  }
+  code
+  {
+    color: dimgray;
+  }
+
