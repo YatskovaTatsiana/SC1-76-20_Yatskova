@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_css_base1_add1</title>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0; /* Обнуляем значение отступов */
+            padding: 0; /* Значение полей */
+        }
+        .hr > li{
+            display: inline-block;
+            width: 100px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background: lightgray;
+            position: relative;
+        }
+        .hr > li:last-child {
+            margin-right: 0;
+        }
+        .hr li:hover{
+            background-color: darkgrey;
+        }
+
+        a{
+            display: block;
+            padding: 3px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: .5s linear;
+        }
+
+        .menu ul a{
+            color: grey;
+        }
+
+        .vr {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: lightgray;
+            color: grey;
+            z-index: 10;
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
+        }
+       .menu .vr {
+           -webkit-transform: scaleY(0);
+           -ms-transform: scaleY(0);
+           transform: scaleY(0);
+           -webkit-transform-origin: 0 0;
+           -ms-transform-origin: 0 0;
+           transform-origin: 0 0;
+        }
+       .menu ul li:hover .vr {
+           -webkit-transform: scaleY(1);
+           -ms-transform: scaleY(1);
+           transform: scaleY(1);
+        }
+        .vr li {
+            border: 1px solid #000;
+            padding: 3px;
+            border-radius: 5px;
+            background: lightgray;
+
+
+        }
+        @media all and (max-width: 750px)  {
+            .hr > li {display: list-item;}
+        }
+    </style>
+</head>
+<body>
+<nav class="menu">
+    <ul class="hr">
+        <li><a href="">Понедельник</a></li>
+        <li><a href="">Вторник</a></li>
+        <li><a href="">Среда</a>
+            <ul class="vr">
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li><a href="">Чеверг</a></li>
+        <li><a href="">Пятница</a></li>
+        <li><a href="">Суббота</a></li>
+        <li><a href="">Воскресенье</a></li>
+    </ul>
+</nav>
+</body>
+</html>

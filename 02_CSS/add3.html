@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_CSS_add3</title>
+    <style type="text/css">
+        * {font-family: Arial, Helvetica, sans-serif}
+        a {text-decoration: none;}
+        a:hover {text-decoration: underline;}
+
+        .flex-container-column
+        {
+            display: flex;
+            flex-direction: column;
+            width: 15em;
+            background-color: lightgray;
+        }
+        .flex-container-row
+        {
+            display: flex;
+            flex-direction: row;
+            background-color: gray;
+        }
+        .flex-container-row > .nav
+        {
+            flex: 0 0 250px;
+            padding: 0.2em;
+            background-color: silver ;
+        }
+        .flex-container-row > .main_content
+        {
+            flex: 1 1 250px;
+            background-color: darkgray;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+  <div class="flex-container-row">
+    <div class="flex-container-column">
+        <p><strong>Блок навигации</strong></p>
+        <ul>
+            <li>Ширина 15em</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагаеся слева</li>
+            <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+        </ul>
+    </div>
+    <div class="main_content">
+        <div>
+            <p><strong>Статья 1</strong><br>
+                Размер блока:<br>
+                Занимает доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ от соседней равным 0.2 em, при помощи<br>
+                свойства margin-bottom
+            </p>
+        </div>
+        <div>
+            <p><strong>Статья 2</strong>
+                Размер блока:<br>
+                Занимает доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ от соседней равным 0.2 em, при помощи<br>
+                свойства margin-bottom. Каринка вставлена при помощи тега, плавание<br>
+                организовано по правому краю внутри данной статьи для этой картинки.
+            </p>
+            <img src="Image/icon_mail.png" alt="Img" style="display: block;margin-left: auto">
+        </div>
+    </div>
+  </div>
+  <div class="flex-container-row">
+     Нижний блок, подвал.Занимает всю доступную ширину.Высота определяется помещенным внутри контентом.
+    </div>
+</body>
+</html>

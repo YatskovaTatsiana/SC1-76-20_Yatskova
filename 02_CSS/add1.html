@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_css_add1</title>
+    <style>
+        .exp1 {
+            width: 80%;
+            padding: 3.5em;
+            height: auto;
+            background-image: url('image/top-l-bg.png'),
+                              url('image/top-r-bg.png'),
+                              url('image/bottom-l-bg.png'),
+                              url('image/bottom-r-bg.png');
+            background-position: top left,top right,
+                                 bottom left,bottom right;
+            background-repeat: no-repeat,no-repeat,
+                               no-repeat,no-repeat;
+        }
+        .exp2 {
+            border-style:solid; border-width: 3em;  width: 50%;
+            border-image-source: url('image/ramka.png') ;
+            border-image-slice: 100;
+            border-image-repeat: stretch;
+            border-image-width: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="exp1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis, dolore esse, exercitationem facilis id natus necessitatibus quam quas rerum sunt voluptatibus. Aut deserunt minus nobis rem vero. Error, veniam?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis, dolore esse, exercitationem facilis id natus necessitatibus quam quas rerum sunt voluptatibus. Aut deserunt minus nobis rem vero. Error, veniam?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis, dolore esse, exercitationem facilis id natus necessitatibus quam quas rerum sunt voluptatibus. Aut deserunt minus nobis rem vero. Error, veniam?</p>
+    </div>
+    <div class="exp2">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa ducimus excepturi minima neque omnis optio pariatur placeat similique. Doloribus facilis illum ipsam itaque iusto, libero neque numquam officia unde.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid earum enim iure neque optio pariatur repellat vel. A aliquam cumque dolor sit? Atque excepturi molestias quaerat ratione! Explicabo, facilis!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorum natus nihil, obcaecati pariatur voluptatem. Dolorem, doloribus esse et explicabo iste, laboriosam laudantium numquam perspiciatis quasi qui quidem rerum voluptatum!
+        </p>
+    </div>
+    <div style="width:80%; background: red repeat-y left; padding: 5px">
+        <div style="background: indianred repeat-x top; padding: 5px">
+            <div style="background: rosybrown repeat-y right; padding: 5px">
+                <div style="background: brown  repeat-x bottom; padding: 5px">
+                    <div style="background: gray  no-repeat top left; padding: 5px">
+                        <div style="background: darkgray no-repeat top right; padding: 5px">
+                            <div style="background: dimgray no-repeat bottom left; padding: 5px">
+                                <div style="background: lightgray no-repeat bottom right; padding: 5px">
+                                    <div style=" padding:1em">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa ducimus excepturi minima neque omnis optio pariatur placeat similique. Doloribus facilis illum ipsam itaque iusto, libero neque numquam officia unde.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid earum enim iure neque optio pariatur repellat vel. A aliquam cumque dolor sit? Atque excepturi molestias quaerat ratione! Explicabo, facilis!
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorum natus nihil, obcaecati pariatur voluptatem. Dolorem, doloribus esse et explicabo iste, laboriosam laudantium numquam perspiciatis quasi qui quidem rerum voluptatum!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
