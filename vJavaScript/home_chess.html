@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess field</title>
+</head>
+<style>    
+    .container {
+        width: 90vmin;
+        height: 90vmin;
+        margin: 5vmin auto 0;
+        border: .5vmin solid black;
+        display: flex;                   
+        flex-direction: column;
+    }
+    p {        
+        width: 100%;
+        height: 20%;
+        margin: 0;   
+        display: flex;        
+    }
+    p span {
+        height: 100%;
+        width: 20%;
+    }
+    .white_field {        
+        background-color: white;
+    }
+    .black_field {
+        background-color: black;        
+    }
+</style>
+<body>
+    <div class="container">
+        <script>             
+            let fieldSize = parseInt(prompt('Input fields\'s size (min - 5; max - 100):'));  
+            checkValue(fieldSize);
+
+            /*Проверяем корректность введенных данных*/
+            function checkValue(fieldSize) {                
+                if (fieldSize < 5 || fieldSize > 100 || isNaN(fieldSize)) alert('Input correct value');
+                else createChessField(fieldSize);
+
+                /*Рисуем доску*/
+                function createChessField(fieldSize) {
+                    let innerField = '<p>';                        
+                    const BLACK_COLOR = '<span class="black_field"></span>';
+                    const WHITE_COLOR = '<span class="white_field"></span>';
+                    let fieldElement = BLACK_COLOR;
+                    for (let i = 1; i <= fieldSize * fieldSize; i++) {                        
+                        fieldElement = (fieldElement == BLACK_COLOR) ? WHITE_COLOR : BLACK_COLOR;
+                        innerField += fieldElement;
+                        /*Проверяем на конец строки*/                        
+                        if (!(i % fieldSize)) {
+                            document.write(innerField + '</p>');     
+                            innerField = '<p>';                                                                
+                            if (!(fieldSize % 2)) fieldElement = (fieldElement == BLACK_COLOR) ? WHITE_COLOR : BLACK_COLOR;
+                        }                         
+                    }                        
+                }
+
+            }
+        </script>
+    </div>    
+</body>
+</html>

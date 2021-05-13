@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_html</title>
+    <style>
+        body {
+            background-color: #ebebeb; /*фон*/
+            margin: 25px; /*отступ*/
+        }
+
+        ul {
+            list-style: none; /* Убираем маркеры */
+            margin: 0; /* Отступ сверху и снизу */
+            padding: 0; /* Поля */
+            background: darkgrey; /*фон*/
+            width: 250px;
+            font-family: Arial;
+        }
+        li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        li a {
+            text-decoration: none; /*уб.подчеркивание текста*/
+            display: block;
+            color: white;
+            padding: 25px;
+            transition: .3s linear;
+        }
+        li a:hover {
+            background: dimgray; /* Цвет фона под ссылкой */
+            color: white; /* Цвет ссылки */
+        }
+        li a:before{
+            font-size: 20px;
+            margin-right: 14px;
+        }
+
+        li:nth-child(1) a:before {content: url("Icon/extref.png");}
+        li:nth-child(2) a:before {content: url("Icon/extref.png");}
+        li:nth-child(3) a:before {content: url("Icon/extref.png");}
+        li:nth-child(4) a:before {content: url("Icon/extref.png");}
+        li:nth-child(5) a:before {content: url("Icon/extref.png");}
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="">EDIT</a></li>
+    <li><a href="">FAVORITES</a></li>
+    <li><a href="">HISTORY</a></li>
+    <li><a href="">SECURITY</a></li>
+    <li><a href="">SETINGS</a></li>
+</ul>
+</body>
+</html>

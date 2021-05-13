@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_test</title>
+    <style>
+        * {font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 15px;
+        }
+        body {
+            background-color: #ebebeb; /*фон*/
+            margin: 10px; /*отступ*/
+        }
+        ul {
+            list-style: none;
+            background-color: brown;
+            margin-bottom: 10px; /* Отступ сверху и снизу строки */
+        }
+        ul li{
+            display: inline;
+        }
+        li a:hover {
+            color: black; /*цвет при наведении*/
+        }
+        li a{
+            text-decoration: none; /* подч*/
+        }
+        section{
+            margin-bottom: 10px;
+        }
+
+        .column-left{
+            float: left;
+            width: 20%;
+            padding: 0;
+        }
+        .column-right{
+            float: right;
+            width: 10%;
+            height: 250px;
+            background-color: tan;
+        }
+        .column-main {
+            width: 63.5%;
+            height: 350px;
+            background-color: limegreen;
+            margin: 0 10px; /*отступ*/
+        }
+        .footer {
+            clear: both;
+            margin-top: 10px;
+            padding: 0;
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+<header style = "background-color: indianred">
+    <p>HEADER</p>
+</header>
+
+<ul>
+    <li>Menu 1</li>
+    <li>Menu 2</li>
+    <li>Menu 3</li>
+</ul>
+
+    <aside class="column-left">
+        <aside style="height: 150px; margin-bottom: 10px; background-color: limegreen">
+            <p>Aside 1</p>
+        </aside>
+        <aside style="height: 50px; background-color: #451589">
+            <p>Aside 2</p>
+        </aside>
+    </aside>
+
+    <main class="column-main" style="display: inline-block">
+        <p>MAIN CONTENT</p>
+        <section style = "background-color:grey; height:75px">
+            <p>section1</p>
+        </section>
+        <section style = "background-color:grey; height:75px">
+            <p>section2</p>
+        </section>
+    </main>
+
+    <aside class="column-right">
+        <p>Aside 3</p>
+    </aside>
+
+    <footer class="footer">
+        <p>FOOTER</p>
+    </footer>
+
+</body>
+</html>

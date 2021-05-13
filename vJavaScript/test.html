@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+#container{
+    position: relative;
+}
+#circle{
+  font-size: 50px;
+  color:gray;
+}
+.change_color{
+    color:khaki;
+}
+</style>
+
+<body>
+    <button onclick = "ChangeColor()">Next</button>
+    <div id="container">
+        <div id="circle1">&#x25CF;</div>
+        <div id="circle2">&#x25CF;</div>
+        <div id="circle3">&#x25CF;</div>
+    </div>
+
+    <script>
+
+        /*circ.addEventListener('click', function(){ChangeColor(circ)})*/
+
+        function ChangeColor(e)
+        {
+            let el = document.getElementById('container');
+            /*el.classList.toggle('ch_col_act',false);*/
+            el.style.color='red';
+        }
+    </script>
+</body>
+</html>

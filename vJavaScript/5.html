@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ .red_color
+{
+            background-color: red;
+}
+
+</style>
+<body>
+<ol>
+    <li id = "elem" >learn.javascript.ru/searching-elements-dom</li>
+    <li id = "elem">learn.javascript.ru/modifying-document</li>
+    <li id = "elem">learn.javascript.ru/styles-and-classes</li>
+    <li id = "elem">learn.javascript.ru/size-and-scroll</li>
+    <li id = "elem" onclick="ClikCol">learn.javascript.ru/size-and-scroll-window</li>
+    <li id = "elem">learn.javascript.ru/coordinates</li>
+</ol>
+
+<input id="elem1" type="button" value="Нажми меня!">
+
+<script>
+    elem.onclick=ClikCol;
+
+   //let el = document.getElementById('elem');
+    //el.addEventListener("click", function(){ClikCol});
+   //elem.addEventListener("click",ClikCol());
+
+    function ClikCol()
+    {
+        //i[el].classList.toggle('red_color');
+        //i[el].style.background='green';
+        alert("123");
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_html</title>
+    <style>
+        * {font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 15px;
+        }
+        body {
+            background-color: #ebebeb; /*фон*/
+            margin: 10px; /*отступ*/
+        }
+        ul {
+            list-style: none;
+            background-color: brown;
+            margin-bottom: 10px; /* Отступ сверху и снизу строки */
+        }
+        ul li{
+            display: inline;
+        }
+        li a:hover {
+            color: black; /*цвет при наведении*/
+        }
+        li a{
+            text-decoration: none; /* подч*/
+        }
+        .block_section{
+            margin-bottom: 10px;
+            background-color: #e0a7a7;
+            height:75px
+        }
+
+        .column-left{
+            float: left;
+            width: 20%;
+            padding: 0;
+        }
+        .column-right{
+            float: right;
+            width: 5%;
+            height: 250px;
+            background-color: tan;
+            text-align: center;
+        }
+        .column-main {
+            width: 68.5%;
+            height: 350px;
+            background-color: #de7a7a;
+            margin: 0 10px; /*отступ*/
+        }
+        .footer {
+            clear: both;
+            margin-top: 10px;
+            padding: 0;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header style = "background-color: indianred">
+        <p>HEADER</p>
+    </header>
+
+    <ul>
+        <li><a>Menu 1</a></li>
+        <li><a>Menu 2</a></li>
+        <li><a>Menu 3</a></li>
+    </ul>
+
+    <aside class="column-left">
+        <aside style="height: 150px; margin-bottom: 10px; background-color: #de7a7a;padding: 0">
+            <p>Aside 1</p>
+        </aside>
+        <aside style="height: 50px; background-color: #de7a7a;padding: 0">
+            <p>Aside 2</p>
+        </aside>
+    </aside>
+
+    <main class="column-main" style="display: inline-block">
+        <p>MAIN CONTENT</p>
+        <section class="block_section">
+            <p>section1</p>
+        </section>
+        <section class="block_section">
+            <p>section2</p>
+        </section>
+    </main>
+
+    <aside class="column-right" style="background-color: #de7a7a">
+        <p style="width: .7em; width: 1ch; word-wrap: break-word;">Aside 3</p>
+    </aside>
+
+    <footer class="footer">
+        <p>FOOTER</p>
+    </footer>
+
+</body>
+</html>

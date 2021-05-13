@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04_HTML</title>
+    <style type="text/css">
+        body { margin: 0; background: #c2c8b8; }
+        .layout { width: 100%; table-layout: fixed;}
+        .layout TD { padding: 7px; vertical-align: center;
+                     border-bottom: 1px solid #c2c8b8; /* Линия снизу */}
+        .col1 {width: 50%; }
+        .col2 {width: 300px; }
+        .col3 {width: 50%;}
+        .footer {
+            clear: both;
+            color: #c2c8b8;
+            margin-top: 10px;
+            padding: 0 0 10px;
+            background-color: #245878;}
+        .footer div{ padding: 25px;
+                     text-align: center;}
+        ul {
+            list-style: none;
+            margin-bottom: 10px; /* Отступ сверху и снизу строки */
+        }
+        li a:hover {
+            text-decoration:underline;
+        }
+        li a{
+            text-decoration: none; /* подч*/
+        }
+        img {
+            width: 10%; /* Ширина */
+            float: left; /* Выстраиваем элементы по горизонтали */
+            margin: 0 0 0 10%; /*  Отступ слева */
+        }
+
+        img:first-child {
+            margin-left: 0; /* Убираем отступ для первого элемента */
+        }
+    </style>
+</head>
+<body>
+<section style="height: 350px"></section>
+<footer class="footer">
+    <table class="layout" cellspacing="0">
+        <tr>
+            <td class="col1">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>News</a></li>
+                </ul>
+            </td>
+            <td class="col2">
+                <ul>
+                    <li><a>Blog</a></li>
+                    <li><a>FAQ</a></li>
+                    <li><a>Contacts</a></li>
+                    <li><a>Privacy & cookies</a></li>
+                </ul>
+            </td>
+            <td class="col3">
+                <img src="image/Facebook_.png" alt=""
+                     onmouseover="this.src='image/Facebook.png'"
+                     onmouseout="this.src='image/Facebook_.png'"/>
+                <img src="image/Instagram_.png" alt=""
+                    onmouseover="this.src='image/Instagram.png'"
+                    onmouseout="this.src='image/Instagram_.png'"/>
+                <img src="image/YouTube_.png" alt=""
+                    onmouseover="this.src='image/YouTube.png'"
+                    onmouseout="this.src='image/YouTube_.png'"/>
+            </td>
+        </tr>
+    </table>
+        <div>Copyright &copy; Company 2018 - 2019</div>
+</footer>
+</body>
+</html>
